@@ -30,9 +30,9 @@ const DailyRoutine: React.FC<DailyRoutineProps> = ({ day }) => {
         if (exerciseName && exerciseReps && exerciseWeight && exerciseSeries) {
             const newExercise: Exercise = {
                 name: exerciseName,
-                reps: exerciseReps, // Almacenamos las repeticiones
-                weight: exerciseWeight, // Almacenamos el peso
-                series: exerciseSeries, // Almacenamos las series como un string
+                reps: exerciseReps, // Almaceno las repeticiones
+                weight: exerciseWeight, // Almaceno el peso
+                series: exerciseSeries, // Almaceno las series como un string
             };
 
             if (editIndex !== null) {
@@ -127,7 +127,7 @@ const DailyRoutine: React.FC<DailyRoutineProps> = ({ day }) => {
                                 <td className="border p-2">{exercise.reps}</td> {/* Mostrar repeticiones */}
                                 <td className="border p-2">{exercise.weight}</td> {/* Mostrar peso */}
                                 <td className="border p-2">{exercise.series}</td> {/* Mostrar series */}
-                                <td className="border p-2 flex flex-col space-y-2"> {/* Cambiar a flex-col */}
+                                <td className="border p-2 flex flex-col space-y-2"> 
                                     <button
                                         onClick={() => editExercise(index)}
                                         className="bg-green-500 text-white p-1 rounded"
